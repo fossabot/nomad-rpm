@@ -8,3 +8,4 @@ done
 spectool -g -R /home/vagrant/rpmbuild/SPECS/nomad.spec
 rpmbuild -ba /home/vagrant/rpmbuild/SPECS/nomad.spec
 cp /home/vagrant/rpmbuild/RPMS/x86_64/nomad*.rpm /opt/rpm
+

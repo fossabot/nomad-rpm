@@ -1,10 +1,11 @@
 #!/bin/bash -x
-rm -rf /home/vagrant/rpmbuild
+rm -rf ~/rpmbuild
 rpmdev-setuptree
-[ -L /home/vagrant/rpmbuild/SPECS/nomad.spec ] || ln -s /opt/rpm/SPECS/nomad.spec /home/vagrant/rpmbuild/SPECS/
+[ -L ~/rpmbuild/SPECS/nomad.spec ] || ln -s /opt/rpm/SPECS/nomad.spec ~/rpmbuild/SPECS/
 for f in `find /opt/rpm/SOURCES -type f`; do
-  [ -L /home/vagrant/rpmbuild/SOURCES/`basename $f` ] || ln -s $f /home/vagrant/rpmbuild/SOURCES/
+  [ -L ~/rpmbuild/SOURCES/`basename $f` ] || ln -s $f ~/rpmbuild/SOURCES/
 done
-spectool -g -R /home/vagrant/rpmbuild/SPECS/nomad.spec
-rpmbuild -ba /home/vagrant/rpmbuild/SPECS/nomad.spec
-cp /home/vagrant/rpmbuild/RPMS/x86_64/nomad*.rpm /opt/rpm
+spectool -g -R ~/rpmbuild/SPECS/nomad.spec
+rpmbuild -ba ~/rpmbuild/SPECS/nomad.spec
+cp ~/rpmbuild/RPMS/x86_64/nomad*.rpm /opt/rpm
+

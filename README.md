@@ -1,4 +1,6 @@
 # RPM Spec for Nomad
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkelnmaari%2Fnomad-rpm.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkelnmaari%2Fnomad-rpm?ref=badge_shield)
+
 
 Tries to follow the [packaging guidelines](https://fedoraproject.org/wiki/Packaging:Guidelines) from Fedora.
 
@@ -63,3 +65,7 @@ sample configs are provided.
 # More info
 
 See the [nomadproject.io](http://www.nomadproject.io) website.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkelnmaari%2Fnomad-rpm.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkelnmaari%2Fnomad-rpm?ref=badge_large)
